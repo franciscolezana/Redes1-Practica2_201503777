@@ -61,7 +61,7 @@ Una vez adentro para configurar la interfaz FastEthernet0/0 escribimos:
 Ahora asignamos una dirección ip a la interfaz y la máscara de red con el siguiente comando:  
 `ip address 192.168.13.1 255.255.255.192`
 
-<img src="/SS/R3.PNG" alt="drawing" width="600"/> 
+<img src="/SS/R4.PNG" alt="drawing" width="600"/> 
   
 Una vez asignada al ip para esta interfaz activamos la activamos con el comando:    
 `no shut`  
