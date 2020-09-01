@@ -26,11 +26,11 @@ La siguiente topología cuenta con 6 host de los cuales 5 son VPCS y 1 es una m�
 
 Para esta práctica se van a utilizar las siguientes direcciones IP, la X representan el 4to número de carnet del estudiante de derecha a izquierda. El carnet del usuario es 201503777 , se utilizará X:3 al momento de conectar los host. Las ips asignadas serán las siguientes: 
 
-<img src="/src/ips.PNG"/> 
+<img src="/SS/ips.png"/> 
 
 Las subredes están dadas por la siguiente imagen:
 
-<img src="/src/subs.PNG"/> 
+<img src="/SS/subs.png"/> 
 
 Las interfaces del router poseerán las siguientes ips:  
 
@@ -68,52 +68,51 @@ Una vez asignada al ip para esta interfaz activamos la activamos con el comando:
 
 <img src="/SS/R5.PNG" alt="drawing" width="600"/> 
 
-Salimos de la configuración de interfaz con el comando:    
-`exit`  
-
-<img src="/src/r6.PNG" alt="drawing" width="600"/> 
-
-Configuramos la otra interfaz que es la FastEthernet0/1 con los mismos comandos que utilizamos en la interfaz anterior, solamente aplicando cambios en el nombre de la interfaz y la dirección IP de esta.  
-Para entrar a la configuración del router scribimos el siguiente comando:  
-`conf t`  
-
-<img src="/src/r2.PNG" alt="drawing" width="600"/> 
-
-Una vez adentro para configurar la interfaz FastEthernet0/1 escribimos:   
+Configuramos la otra interfaz que es la FastEthernet0/1 con los mismos comandos que utilizamos en la interfaz anterior, solamente aplicando cambios en el nombre de la interfaz y la dirección IP utilizando el siguiente comando:   
 `int f0/1`  
 
-<img src="/src/r7.PNG" alt="drawing" width="600"/> 
+<img src="/SS/R6.PNG" alt="drawing" width="600"/> 
 
 Ahora asignamos una dirección ip a la interfaz y la máscara de red con el siguiente comando:  
-`ip address 192.168.18.254 255.255.255.0`  
+`ip address 192.168.13.65 255.255.255.192`  
 
-<img src="/src/r8.PNG" alt="drawing" width="600"/> 
+<img src="/SS/R7.PNG" alt="drawing" width="600"/> 
   
 Una vez asignada al ip para esta interfaz activamos la activamos con el comando:  
 `no shut`  
 
-<img src="/src/r9.PNG" alt="drawing" width="600"/> 
+<img src="/SS/R8.PNG" alt="drawing" width="600"/> 
 
-Salimos de la configuración de interfaz con el comando:  
-`exit`  
+Configuramos la otra interfaz que es la FastEthernet1/0 con los mismos comandos que utilizamos en la interfaz anterior, solamente aplicando cambios en el nombre de la interfaz y la dirección IP utilizando el siguiente comando:   
+`int f1/0`  
 
-<img src="/src/r10.PNG" alt="drawing" width="600"/> 
+<img src="/SS/R9.PNG" alt="drawing" width="600"/> 
+
+Ahora asignamos una dirección ip a la interfaz y la máscara de red con el siguiente comando:  
+`ip address 192.168.13.129 255.255.255.192`  
+
+<img src="/SS/R10.PNG" alt="drawing" width="600"/> 
+  
+Una vez asignada al ip para esta interfaz activamos la activamos con el comando:  
+`no shut`  
+
+<img src="/SS/R11.PNG" alt="drawing" width="600"/> 
 
 Salimos de la configuración del router con el comando exit y escribimos el siguiente comando para ver las direcciones asignadas:  
 `sh ip int brief`  
 
-<img src="/src/r11.PNG" alt="drawing" width="600"/> 
+<img src="/SS/r13.PNG" alt="drawing" width="600"/> 
 
 Por último escribimos el siguiente comando para guardar los cambios permanentemente  
 `wr`  
 
-<img src="/src/r12.PNG" alt="drawing" width="600"/> 
+<img src="/SS/r14.PNG" alt="drawing" width="600"/> 
 
 
-### CONFIGURACIÓN DE HOST PC2
-Una vez configuradas las direcciones de las interfaces del router, procedemos a encender nuestros host, en este caso la que tiene por nombre PC2, ingresando a la consola tendríamos la siguiente ventana:
+### CONFIGURACIÓN DE HOST PC1
+Una vez configuradas las direcciones de las interfaces del router, procedemos a encender nuestros host, en este caso la que tiene por nombre PC1, ingresando a la consola tendríamos la siguiente ventana:
 
-<img src="/src/pc1.PNG" alt="drawing" width="600"/> 
+<img src="/SS/PC1.PNG" alt="drawing" width="600"/> 
 
 A continuación asignamos la IP y definimos el gateway correspondiente a esta máquina con el siguiente comando:  
 `ip 192.168.17.15 192.168.17.254`  
