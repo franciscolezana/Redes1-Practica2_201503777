@@ -218,7 +218,7 @@ Una vez ubicados en el escritorio, nos dirigimos a la parte inferior de esta y b
 
 <img src="/SS/L2.PNG" alt="drawing" width="600"/> 
 
-En el apartado de **IP Address** escribiremos la dirección IP asignada a esta máquina la cuál es: **192.168.17.30** , el sistema identificará el Gateway automáticamente, selecccionamos la opción de **Apply** y luego **Exit** para finalizar con la configuración
+En el apartado de **IP Address** escribiremos la dirección IP asignada a esta máquina la cuál es: **192.168.13.150** máscara de red **255.255.255.192** y gateway **192.168.18.192** , selecccionamos la opción de **Apply** y luego **Exit** para finalizar con la configuración
 
 <img src="/SS/L3.PNG" alt="drawing" width="600"/> 
 
