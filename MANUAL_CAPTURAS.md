@@ -41,7 +41,7 @@ En cuanto a los switch, estos representan 6 dominios de colisión ( 1 por cada d
 
 El cálculo representado en la topología quedará de la siguiente forma: 
 
-<img src="/SS/TOPO2.PNG" alt="drawing" width="600"/> 
+<img src="/SS/TOPO2.PNG"> 
 
 
 ## CAPTURA DE PAQUETES
